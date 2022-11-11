@@ -1,0 +1,132 @@
+
+h1 {
+	color: black;
+	font-size: 100%;
+	font-family: cursive;
+	/*margin-left: 25px;*/
+	line-height: 200%;
+}
+
+h2 {
+	position: relative;
+	color: olive;
+	font-size: medium;
+	font-family: sans-serif;
+	/*margin-left: 50px;*/
+	/*width: 300px;*/
+  	/*height: 20px;  */
+  	padding: 10px;
+  	border: 5px dashed ;
+  	background-color: lightblue;
+}
+
+
+
+p {
+	color: black;
+	font-size: small;
+	font-family: sans-serif;
+	/*margin-left: 75px;*/
+	padding: 10px;
+	/*width: 800px;*/
+	
+}
+
+p:hover {
+  background-color: darkkhaki;
+}
+
+ol {
+	color: black;
+	font-size: small;
+	font-family: sans-serif;
+	/*margin-left: 75px;*/
+	/*width: 800px;*/
+}
+
+ol:hover {
+  background-color: darkkhaki;
+}
+
+strong {
+	font-style: italic;
+}
+
+
+
+div.disclaimer {
+	/*position: fixed;*/
+  	bottom: 15px;
+  	right: 15px;
+  	font-size: 50%;
+  	/*width: 400px;*/
+  	/*border: 3px solid #73AD21;*/
+}
+
+div.about {
+	font-size: 65%;
+	position: absolute;
+  	top: 15px;
+  	right: 15px;
+}
+
+/*img {
+	float: left;
+}*/
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'menu main main main'
+    'menu footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.side-gallery {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-start;
+}
+
+.gallery-image {
+
+	display: flex;
+	flex-grow: 1;
+	flex: 1 1 auto;
+}
+
+.header {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-end;
+	justify-content: space-around;
+}
+
+.button {
+	color: black;
+	font-size: medium;
+	font-family: sans-serif;
+}
+
+
+.right-gallery {
+	display: flex;
+	flex-flow: row wrap;
+	/*align-items: flex-start;*/
+}
